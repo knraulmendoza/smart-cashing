@@ -10,6 +10,12 @@ import { MaterialModule } from './material';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './components/login/login.component';
 
+// services
+import { BarrioService } from './services/barrios.service';
+import { BdService } from './services/bd.service';
+import { GlobalService } from './services/globales.service';
+import { LogueoService } from './services/logueo.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +27,12 @@ import { LoginComponent } from './components/login/login.component';
     MaterialModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    BarrioService,
+    BdService,
+    GlobalService,
+    LogueoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
