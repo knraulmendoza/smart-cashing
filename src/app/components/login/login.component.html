@@ -1,0 +1,21 @@
+<div class="center">
+  <mat-card >
+    <mat-card-header style= "justify-content: center">
+        <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="example-container">
+        <mat-form-field>
+          <input matInput placeholder="Usuario" type="text">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Contraseña" type="password">
+          </mat-form-field>
+      </div>
+    </mat-card-content>
+    <mat-card-actions class="example-container">
+      <button mat-raised-button (click)="onClick" color="primary">Login</button>
+      <button mat-button>¿Olvido la contraseña?</button>
+    </mat-card-actions>
+</mat-card>
+</div>
